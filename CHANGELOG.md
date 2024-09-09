@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.1
+
+- Move `eslint-plugin-jest` to `devDependencies`
+
 ## 4.0.0
 
 - Move stylelint to `peerDependencies`

@@ -1,5 +1,15 @@
 # Changelog
 
+## 5.0.0
+
+- **Breaking**: Converted codebase to TypeScript
+- **Breaking**: Updated Stylelint support to v16 and v17
+- **Breaking**: Modernized Node.js support (22, 24, 25)
+- Updated ESLint to v9 with Flat Config (`eslint.config.mjs`)
+- Integrated Prettier for consistent code formatting
+- Renamed default branch from `master` to `main`
+- Updated GitHub CI workflow to use modern actions and Node versions
+
 ## 4.0.1
 
 - Move `eslint-plugin-jest` to `devDependencies`

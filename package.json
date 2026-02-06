@@ -1,23 +1,26 @@
 {
   "name": "stylelint-selector-bem-pattern",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "description": "A stylelint plugin that harnesses the power of postcss-bem-linter",
-  "main": "index.js",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
+    "build": "tsc",
+    "pretest": "npm run build",
     "lint": "eslint .",
-    "test": "NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest --runInBand"
+    "test": "NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest --runInBand",
+    "prepare": "npm run build"
   },
-  "exports": "./index.js",
+  "exports": "./dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simonsmith/stylelint-selector-bem-pattern.git"
+    "url": "git+https://github.com/bleeding-gums/stylelint-selector-bem-pattern.git"
   },
   "engines": {
-    "node": ">=18.12.0"
+    "node": "^22.0.0 || ^24.0.0 || ^25.0.0"
   },
   "files": [
-    "index.js"
+    "dist"
   ],
   "keywords": [
     "stylelint",
@@ -28,34 +31,38 @@
     "bem"
   ],
   "author": "David Clark",
+  "contributors": [
+    "Antigravity"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/simonsmith/stylelint-selector-bem-pattern/issues"
+    "url": "https://github.com/bleeding-gums/stylelint-selector-bem-pattern/issues"
   },
-  "homepage": "https://github.com/simonsmith/stylelint-selector-bem-pattern#readme",
+  "homepage": "https://github.com/bleeding-gums/stylelint-selector-bem-pattern#readme",
   "dependencies": {
-    "lodash": ">=4.17.21",
-    "postcss": "^8.4.24",
+    "lodash": "^4.17.21",
+    "postcss": "^8.4.40",
     "postcss-bem-linter": "^4.0.1"
   },
   "devDependencies": {
-    "eslint": "^7.31.0",
-    "eslint-plugin-jest": "^27.2.2",
-    "jest": "^29.5.0",
-    "jest-preset-stylelint": "^7.0.0",
-    "stylelint": "^16.2.1"
+    "@types/jest": "^29.5.12",
+    "@types/lodash": "^4.17.4",
+    "@types/node": "^22.13.1",
+    "@typescript-eslint/eslint-plugin": "^8.23.0",
+    "@typescript-eslint/parser": "^8.23.0",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "jest": "^29.7.0",
+    "jest-preset-stylelint": "^7.1.0",
+    "prettier": "^3.4.2",
+    "stylelint": "^16.14.1",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.23.0"
   },
   "peerDependencies": {
-    "stylelint": "^16.2.1"
-  },
-  "jest": {
-    "preset": "jest-preset-stylelint",
-    "testMatch": [
-      "**/test/*.js"
-    ]
-  },
-  "volta": {
-    "node": "20.10.0",
-    "yarn": "1.22.19"
+    "stylelint": "^16.0.0 || ^17.0.0"
   }
 }

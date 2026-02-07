@@ -1,13 +1,15 @@
 # Changelog
 
-## 5.0.0
+## 5.0.0 (2026-02-07)
 
-- **Breaking**: Converted codebase to TypeScript
+- **Breaking**: Converted codebase to TypeScript for better type safety and DX
 - **Breaking**: Updated Stylelint support to v16 and v17
 - **Breaking**: Modernized Node.js support (22, 24, 25)
-- Updated ESLint to v9 with Flat Config (`eslint.config.mjs`)
+- Updated ESLint to v10 with Flat Config (`eslint.config.mjs`)
 - Integrated Prettier for consistent code formatting
 - Renamed default branch from `master` to `main`
+- Added comprehensive `BUILD.md` documentation for build and release processes
+- Optimized repository configuration (`.gitignore`, `.prettierignore`, and CI workflows)
 - Updated GitHub CI workflow to use modern actions and Node versions
 
 ## 4.0.1

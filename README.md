@@ -52,3 +52,7 @@ For more examples of postcss-bem-linter configuration possibilities, please read
 - **Stylelint 17**: Updated to support the latest Stylelint 17.x versions while maintaining compatibility with 16.x.
 - **ESM First**: The package is now fully ESM.
 - **Main Branch**: Renamed from `master` to `main`.
+
+## Development
+
+For information on how to build, test, and contribute to this project, please see the [BUILD.md](./BUILD.md) file.

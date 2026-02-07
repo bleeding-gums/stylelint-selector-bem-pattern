@@ -1,6 +1,6 @@
 {
-  "name": "stylelint-selector-bem-pattern",
-  "version": "5.0.0",
+  "name": "stylelint-ts-selector-bem-pattern",
+  "version": "6.0.0",
   "description": "A stylelint plugin that harnesses the power of postcss-bem-linter",
   "main": "dist/index.js",
   "type": "module",
